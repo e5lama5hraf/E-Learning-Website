@@ -993,7 +993,7 @@ h1 .red {
     display: flex;
     flex-direction: row;
     width: max-content;
-    animation: loopTeachers 20s linear infinite;
+    animation: loopTeachers 30s linear infinite;
 }
 
 .teacher-card {

@@ -97,7 +97,7 @@ const subjectsData = [
     },
 ];
 
-const teachersTrack = document.getElementById("teachersTrack");
+const teachersTrack = document.querySelectorAll(".teachers-track div");
 const subjectsTrack = document.getElementById("subjectsTrack");
 
 function createTeacherCard(teacher) {
@@ -135,7 +135,9 @@ if (subjectsTrack) {
 }
 
 if (teachersTrack) {
-    [...teachers, ...teachers].forEach((teacher) => {
-        teachersTrack.appendChild(createTeacherCard(teacher));
-    });
+    teachersTrack.forEach((track) => {
+        [...teachers].forEach((teacher) => {
+            track.appendChild(createTeacherCard(teacher));
+        });
+    })
 }

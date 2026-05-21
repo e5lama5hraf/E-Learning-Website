@@ -991,16 +991,17 @@ h1 .red {
     position: relative;
     z-index: 2;
     display: flex;
-    gap: var(--gap);
+    flex-direction: row;
     width: max-content;
-    padding-inline: 24px;
-    animation: loopTeachers 28s linear infinite;
+    animation: loopTeachers 20s linear infinite;
 }
 
 .teacher-card {
-    width: 230px;
-    height: 230px;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
     flex: 0 0 auto;
+    margin-right: 20px;
     border-radius: 22px;
     overflow: hidden;
     position: relative;
@@ -1033,11 +1034,11 @@ h1 .red {
 
 @keyframes loopTeachers {
     from {
-        transform: translateX(0);
+        transform: translateX(50%);
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
 }
 

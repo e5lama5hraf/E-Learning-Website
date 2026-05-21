@@ -816,7 +816,7 @@ h1 .red {
 }
 .subjects-track {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--gap);
     padding: 80px clamp(18px, 5vw, 72px) 80px;
     margin: 0 auto;
